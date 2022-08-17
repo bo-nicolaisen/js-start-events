@@ -1,0 +1,20 @@
+form {
+  width: 300px;
+  background-color: lightcyan;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+form input {
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.centerChild {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

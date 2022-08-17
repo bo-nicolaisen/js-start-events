@@ -8,25 +8,58 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" id="myCss" href="css/site.css">
+    <script src="js/toggleform.js" defer></script>
     <script src="js/validation.js" defer></script>
+
+
 </head>
 
 <body>
-    <form>
-        <label for="cow">Skriv ko:</label><br>
-        <input type="text" id="cow" name="cow"><br>
 
-        <label for="pig">skriv gris</label><br>
-        <input type="text" id="pig" value="bob" name="pig">
-        <button type="button" id="evaluatePig">valider</button><br>
+    <div class="centerChild">
 
-        <label for="moose">Skriv elg:</label><br>
-        <input type="text" id="moose" name="moose"><br>
+        <h2 class="overskrifter">overskrift 1</h2>
+        <h2 class="overskrifter">overskrift 2 </h2>
 
-        <button type="button" id="evaluateForm">valider form</button>
-    </form>
+        <button type="button" id="toggleForm">Skjul form</button><br>
+
+        <form id="myForm">
+            <label for="favcolor">vælg side baggrund:</label><br>
+            <input type="color" id="pageColor" name="pageColor" value="#000000"><br>
+
+
+            <label for="cow">Skriv ko:</label><br>
+            <input type="text" id="cow" name="cow"><br>
+
+            <label for="pig">skriv gris</label><br>
+            <input type="text" id="pig" value="bob" name="pig">
+            <button type="button" id="evaluatePig">valider</button><br>
+
+            <label for="moose">Skriv elg:</label><br>
+            <input type="text" id="moose" name="moose"><br>
+
+
+            <p>
+                <label for="species">vælg en art:</label>
+                <select id="species" name="species">
+                    <option value="Fugl">Fugl</option>
+                    <option value="Fisk">Fisk</option>
+                    <option value="Reptil">Reptil</option>
+                    <option value="Insekt">Insekt</option>
+                    <option value="Pattedyr">Pattedyr</option>
+                </select><br><br>
+            </p>
+            <button type="button" id="evaluateForm">valider form</button>
+        </form><br>
+        <h2 id="group">hvilken gruppe skal fremlægge?</h2>
+        <button type="button" id="chooseGroupButton">vælg</button><br>
+    </div>
+
+
 
 </body>
+
+
 
 </html>
